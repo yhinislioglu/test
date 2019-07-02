@@ -78,7 +78,7 @@ public class MyBookActivity extends AppCompatActivity implements RecyclerViewMyB
     }
 
     @Override
-    public void onItemClick(ArrayList<MyBookResponse> item) {
+    public void onItemClick(MyBookResponse item) {
 
     }
 }

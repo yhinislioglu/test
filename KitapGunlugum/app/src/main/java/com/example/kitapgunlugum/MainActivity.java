@@ -1,5 +1,6 @@
 package com.example.kitapgunlugum;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
@@ -39,7 +40,27 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewAdapt
 
     @Override
     public void onItemClick(DataModel item) {
-        Toast.makeText(getApplicationContext(),item.text+" tıklandı.",Toast.LENGTH_LONG).show();
+        Intent intent = new Intent();
+        switch (item.text)
+        {
+            case "Kitaplarım" :
+                intent = new Intent(MainActivity.this,MyBookActivity.class);
+                break;
+            case "Ajanda" :
+                intent = new Intent(MainActivity.this,MyBookActivity.class);
+                break;
+            case "Günlük" :
+                intent = new Intent(MainActivity.this,MyBookActivity.class);
+                break;
+            case "Raporlar" :
+                intent = new Intent(MainActivity.this,MyBookActivity.class);
+                break;
+
+        }
+
+
+        startActivity(intent);
+        //Toast.makeText(getApplicationContext(),item.text+" tıklandı.",Toast.LENGTH_LONG).show();
     }
 }
 

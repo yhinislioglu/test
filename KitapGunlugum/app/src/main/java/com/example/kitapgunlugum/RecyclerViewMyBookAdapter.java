@@ -58,7 +58,7 @@ public class RecyclerViewMyBookAdapter extends RecyclerView.Adapter<RecyclerView
         public void onClick(View v) {
             if (mlistener != null)
             {
-                mlistener.onItemClick(myBookResponseArrayList);
+                mlistener.onItemClick(myBookResponse);
             }
         }
     }
@@ -80,6 +80,6 @@ public class RecyclerViewMyBookAdapter extends RecyclerView.Adapter<RecyclerView
     }
 
     public interface ItemListener {
-        void onItemClick(ArrayList<MyBookResponse> item);
+        void onItemClick(MyBookResponse item);
     }
 }
