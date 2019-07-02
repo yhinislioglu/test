@@ -12,5 +12,7 @@ public interface RetrofitLoginService {
     Call<LoginResponse> loginResponseCall(@Body LoginInfo loginInfo);
     @GET("user/")
     Call<UserResponse> userResonseCall(@Header("Authorization") String token);
+    @GET("instance/")
+    Call<MyBookResponse> myBookResponseCall(@Header("Authorization") String token);
 
 }

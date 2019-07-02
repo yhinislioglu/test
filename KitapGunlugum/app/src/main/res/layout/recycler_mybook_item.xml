@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginBottom="11dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtPk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pk : " />
+
+            <TextView
+                android:id="@+id/txtBookName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kitap Adı :" />
+
+            <TextView
+                android:id="@+id/txtSubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subtitle : " />
+
+            <TextView
+                android:id="@+id/txtPageNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sayfa : " />
+
+            <TextView
+                android:id="@+id/txtBarcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Barkod : " />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>
