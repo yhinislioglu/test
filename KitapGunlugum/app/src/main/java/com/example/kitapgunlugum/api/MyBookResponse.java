@@ -26,6 +26,8 @@ public class MyBookResponse implements Serializable {
     @SerializedName("description")
     String description;
 
+
+
     public String getPk() {
         return pk;
     }
@@ -66,7 +68,23 @@ public class MyBookResponse implements Serializable {
         return description;
     }
 
+    public void setPk(String pk) {
+        this.pk = pk;
+    }
 
+    public void setBook_name(String book_name) {
+        this.book_name = book_name;
+    }
 
+    public void setSub_title(String sub_title) {
+        this.sub_title = sub_title;
+    }
 
+    public void setPage_number(String page_number) {
+        this.page_number = page_number;
+    }
+
+    public void setBarcode(String barcode) {
+        this.barcode = barcode;
+    }
 }

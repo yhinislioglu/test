@@ -26,11 +26,12 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class LoginActivity extends AppCompatActivity {
 
+    public Token token = new Token();
+
     private Button loginBtn;
     private EditText editTextEmail;
     private EditText editTextPassword;
     private ProgressDialog progressDialog;
-    public static final String BASE_URL = "http://62.248.59.168:8623/api/rest-auth/";
     private List<LoginResponse> loginResponseList;
 
     @Override
@@ -70,10 +71,11 @@ public class LoginActivity extends AppCompatActivity {
 
     private void postRequestMethod(){
         progressDialog = new ProgressDialog(LoginActivity.this);
+
         progressDialog.setMessage("Lütfen Bekleyin...");
         progressDialog.show();
 
-        Retrofit retrofit = new Retrofit.Builder().baseUrl(BASE_URL)
+        Retrofit retrofit = new Retrofit.Builder().baseUrl(RetrofitLoginService.BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         RetrofitLoginService retrofitLoginService = retrofit.create(RetrofitLoginService.class);
@@ -88,7 +90,7 @@ public class LoginActivity extends AppCompatActivity {
                 if (response.body()!=null) {
                     loginResponseList = new ArrayList<LoginResponse>();
                     loginResponseList.add(loginResponse);
-                    Token token = new Token();
+
                     token.setAuthorizationToken(loginResponseList.get(0).getkey());
 
                     Intent intent = new Intent(getApplicationContext(),MainActivity.class);
