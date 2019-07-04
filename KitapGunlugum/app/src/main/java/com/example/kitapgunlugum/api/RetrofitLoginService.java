@@ -1,5 +1,7 @@
 package com.example.kitapgunlugum.api;
 
+import java.util.List;
+
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
@@ -12,9 +14,7 @@ public interface RetrofitLoginService {
 
     @POST("api/rest-auth/login/")
     Call<LoginResponse> loginResponseCall(@Body LoginInfo loginInfo);
-    @GET("api/rest-auth/user/")
-    Call<UserResponse> userResonseCall(@Header("Authorization") String token);
     @GET("api/edu/instance/")
-    Call<MyBookResponse> myBookResponseCall(@Header("Authorization") String token);
+    Call<List<MyBookResponse>> myBookResponseCall(@Header("Authorization") String token);
 
 }

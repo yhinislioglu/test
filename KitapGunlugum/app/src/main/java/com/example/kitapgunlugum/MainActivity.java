@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewAdapt
 
 
         startActivity(intent);
+        overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
         //Toast.makeText(getApplicationContext(),item.text+" tıklandı.",Toast.LENGTH_LONG).show();
     }
 }

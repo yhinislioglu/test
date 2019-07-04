@@ -39,6 +39,8 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+
+
         loginBtn = findViewById(R.id.btnLogin);
         editTextEmail = findViewById(R.id.txtEmail);
         editTextPassword = findViewById(R.id.txtParola);
@@ -96,6 +98,7 @@ public class LoginActivity extends AppCompatActivity {
                     Intent intent = new Intent(getApplicationContext(),MainActivity.class);
                     //intent.putExtra("LoginKey",(Serializable) loginResponseList);
                     startActivity(intent);
+                    overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
                     finish();
                 }else{
                     Toast.makeText(getApplicationContext(),"Kullanıcı Bilgileri Hatalı",Toast.LENGTH_SHORT).show();

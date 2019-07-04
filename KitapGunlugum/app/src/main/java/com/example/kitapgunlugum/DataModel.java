@@ -1,9 +1,5 @@
 package com.example.kitapgunlugum;
 
-/**
- * Created by anupamchugh on 11/02/17.
- */
-
 public class DataModel {
 
 
