@@ -28,7 +28,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public Token token = new Token();
 
-    private Button loginBtn;
+    private Button loginBtn,registrationBtn;
     private EditText editTextEmail;
     private EditText editTextPassword;
     private ProgressDialog progressDialog;
@@ -42,6 +42,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
         loginBtn = findViewById(R.id.btnLogin);
+        registrationBtn = findViewById(R.id.btnRegistration);
         editTextEmail = findViewById(R.id.txtEmail);
         editTextPassword = findViewById(R.id.txtParola);
 
@@ -57,6 +58,15 @@ public class LoginActivity extends AppCompatActivity {
                     editTextPassword.requestFocus();
                     editTextPassword.setError("Şifrenizi giriniz.");
                 }
+            }
+        });
+
+        registrationBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),RegisterActivity.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
             }
         });
 

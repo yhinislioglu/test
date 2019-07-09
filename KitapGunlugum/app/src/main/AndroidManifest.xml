@@ -34,8 +34,11 @@
             </intent-filter>
         </service>
 
-        <activity android:name=".MyBookActivity"
-            android:label="@string/My_Book"></activity>
+        <activity
+            android:name=".MyBookActivity"
+            android:label="@string/My_Book" />
+        <activity android:name=".RegisterActivity"
+            android:label="@string/Register"></activity>
     </application>
 
 </manifest>

@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Sınav Günlüğüm</string>
     <string name="My_Book">Kitaplarım</string>
+    <string name="Register">Kayıt Ol</string>
+    <string name="Login">Giriş Yap</string>
+
 </resources>
