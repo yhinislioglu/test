@@ -3,5 +3,7 @@
     <string name="My_Book">Kitaplarım</string>
     <string name="Register">Kayıt Ol</string>
     <string name="Login">Giriş Yap</string>
+    <string name="search_hint">Kitap Adı…</string>
+    <string name="action_search">Kitap Günlüğüm</string>
 
 </resources>
