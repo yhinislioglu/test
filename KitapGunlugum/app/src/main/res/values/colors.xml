@@ -4,4 +4,8 @@
     <color name="colorPrimaryDark">#1894f7</color>
     <color name="colorAccent">#ff9640</color>
     <color name="ButonTextColor">#1894f7</color>
+    <color name="CreateColor">#041aa8</color>
+    <color name="RezervedColor">#ed1423</color>
+    <color name="StartColor">#47c00b</color>
+    <color name="EndedColor">#d8d112</color>
 </resources>

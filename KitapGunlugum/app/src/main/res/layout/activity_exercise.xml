@@ -20,13 +20,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyckerExercise"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/background" />
-
-
+    <include layout="@layout/content_exercise" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"

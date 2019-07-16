@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewAdapt
         arrayList = new ArrayList<>();
         arrayList.add(new DataModel("Kitaplarım",R.drawable.openbook,"#b36a53"));
         arrayList.add(new DataModel("Ajanda",R.drawable.agenda,"#e6e6e6"));
-        arrayList.add(new DataModel("Günlük",R.drawable.diary,"#9dbbd3"));
+        arrayList.add(new DataModel("Denemeler",R.drawable.diary,"#9dbbd3"));
         arrayList.add(new DataModel("Raporlar",R.drawable.chemistry,"#f7d460"));
 
         RecyclerViewAdapter adapter = new RecyclerViewAdapter(this,arrayList,this);
