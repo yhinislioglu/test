@@ -37,8 +37,13 @@
         <activity
             android:name=".MyBookActivity"
             android:label="@string/My_Book" />
-        <activity android:name=".RegisterActivity"
-            android:label="@string/Register"></activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/Register" />
+        <activity
+            android:name=".ExerciseActivity"
+            android:label="@string/title_activity_exercise"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

@@ -10,11 +10,15 @@ import retrofit2.http.POST;
 
 public interface RetrofitLoginService {
 
-    String BASE_URL = "http://sinavgunlugum.com/";
+    String BASE_URL = "http://62.248.59.168:8623/";
 
     @POST("api/rest-auth/login/")
     Call<LoginResponse> loginResponseCall(@Body LoginInfo loginInfo);
     @GET("api/edu/instance/")
     Call<List<MyBookResponse>> myBookResponseCall(@Header("Authorization") String token);
+    @GET("api/edu/exercise/")
+    Call<List<ExerciseResponse>> exerciseGetCall(@Header("Authorization") String token);
+    @POST("api/edu/exercise/")
+    Call<ExerciseResponse> exercisePostCall(@Body ExerciseResponse exercisePostValue);
 
 }

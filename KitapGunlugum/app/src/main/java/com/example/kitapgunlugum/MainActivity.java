@@ -49,8 +49,8 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewAdapt
             case "Ajanda" :
                 intent = new Intent(MainActivity.this,MyBookActivity.class);
                 break;
-            case "Günlük" :
-                intent = new Intent(MainActivity.this,MyBookActivity.class);
+            case "Denemeler" :
+                intent = new Intent(MainActivity.this,ExerciseActivity.class);
                 break;
             case "Raporlar" :
                 intent = new Intent(MainActivity.this,MyBookActivity.class);

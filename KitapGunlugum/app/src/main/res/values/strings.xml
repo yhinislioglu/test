@@ -5,5 +5,6 @@
     <string name="Login">Giriş Yap</string>
     <string name="search_hint">Kitap Adı…</string>
     <string name="action_search">Kitap Günlüğüm</string>
+    <string name="title_activity_exercise">ExerciseActivity</string>
 
 </resources>
