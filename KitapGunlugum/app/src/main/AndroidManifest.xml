@@ -43,6 +43,10 @@
         <activity
             android:name=".ExerciseActivity"
             android:label="@string/title_activity_exercise"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ExerciseDetailActivity"
+            android:label="@string/title_activity_exercise_detail"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
